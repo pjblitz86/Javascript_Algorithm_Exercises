@@ -12,14 +12,16 @@ function isBishopAndPawnInSameDiagonal(bishop: string, pawn: string): boolean {
 
   const bishopX = board[bishop[0]];
   console.log(bishopX);
-  const bishopY = parseInt(bishop[1]);
-  const pawnX = board[pawn[0]];
+  const bishopY = board[pawn[0]];
+  const pawnX = parseInt(bishop[1]);
   const pawnY = parseInt(pawn[1]);
 
   if (
+    bishopX + bishopY ===
+    pawnX + pawnY
     // bishopX + bishopY === pawnX + pawnY ||
     // bishopX + pawnY === pawnX + bishopY
-    Math.abs(pawnX - bishopX) === Math.abs(pawnY - bishopY)
+    // Math.abs(pawnX - bishopX) === Math.abs(pawnY - bishopY)
   ) {
     return true;
   }
@@ -27,4 +29,4 @@ function isBishopAndPawnInSameDiagonal(bishop: string, pawn: string): boolean {
   return false;
 }
 
-console.log(isBishopAndPawnInSameDiagonal("b2", "g7"));
+console.log(isBishopAndPawnInSameDiagonal("a1", "g7"));
