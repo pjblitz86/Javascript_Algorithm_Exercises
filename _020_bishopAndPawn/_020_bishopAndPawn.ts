@@ -26,4 +26,4 @@ function isBishopAndPawnInSameDiagonal(bishop: string, pawn: string): boolean {
   return false;
 }
 
-console.log(isBishopAndPawnInSameDiagonal("a1", "c3"));
+console.log(isBishopAndPawnInSameDiagonal("c3", "f6"));
