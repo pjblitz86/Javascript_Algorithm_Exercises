@@ -1,4 +1,4 @@
-// traditional method with for loop, dividing arr in 2 and with temp variable.
+// traditional method with for loop, dividing arr in 2 and using temp variable.
 
 function reverseArray(inputArr: any[]): any[] {
   for (let i = 0; i < inputArr.length / 2; i++) {
